@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="QQt-Zr-9JZ" customClass="DropDownTableViewCell" customModule="Seddiqi_Retail" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QQt-Zr-9JZ" id="LKs-oS-twg">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkU-yv-YyM">
+                        <rect key="frame" x="2" y="3" width="316" height="38"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eux-yA-VTc">
+                                <rect key="frame" x="0.0" y="37" width="316" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="WB5-xE-sfs"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnA-LP-ysU">
+                                <rect key="frame" x="5" y="3" width="311" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="color_f_seddiqi"/>
+                        <constraints>
+                            <constraint firstItem="Eux-yA-VTc" firstAttribute="top" secondItem="hnA-LP-ysU" secondAttribute="bottom" constant="3" id="1bi-af-U5A"/>
+                            <constraint firstAttribute="bottom" secondItem="Eux-yA-VTc" secondAttribute="bottom" id="32d-ZQ-TEj"/>
+                            <constraint firstAttribute="trailing" secondItem="hnA-LP-ysU" secondAttribute="trailing" id="JKj-9V-u6M"/>
+                            <constraint firstItem="hnA-LP-ysU" firstAttribute="top" secondItem="tkU-yv-YyM" secondAttribute="top" constant="3" id="Oju-J2-Qm3"/>
+                            <constraint firstItem="Eux-yA-VTc" firstAttribute="leading" secondItem="tkU-yv-YyM" secondAttribute="leading" id="Q0X-sN-vCn"/>
+                            <constraint firstItem="hnA-LP-ysU" firstAttribute="leading" secondItem="tkU-yv-YyM" secondAttribute="leading" constant="5" id="Rm2-pC-N3m"/>
+                            <constraint firstAttribute="trailing" secondItem="Eux-yA-VTc" secondAttribute="trailing" id="zpF-yQ-Ofc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tkU-yv-YyM" secondAttribute="trailing" constant="2" id="1wL-wE-32e"/>
+                    <constraint firstItem="tkU-yv-YyM" firstAttribute="top" secondItem="LKs-oS-twg" secondAttribute="top" constant="3" id="Qux-Qw-oBR"/>
+                    <constraint firstItem="tkU-yv-YyM" firstAttribute="leading" secondItem="LKs-oS-twg" secondAttribute="leading" constant="2" id="ZiJ-zU-N6U"/>
+                    <constraint firstAttribute="bottom" secondItem="tkU-yv-YyM" secondAttribute="bottom" constant="3" id="v1K-CN-zv7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="5QT-AQ-BiR"/>
+            <connections>
+                <outlet property="titleLabel" destination="hnA-LP-ysU" id="gq6-KB-V6y"/>
+            </connections>
+            <point key="canvasLocation" x="138.29268292682926" y="19.830508474576273"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color_f_seddiqi">
+            <color red="0.92156862745098034" green="0.90980392156862744" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

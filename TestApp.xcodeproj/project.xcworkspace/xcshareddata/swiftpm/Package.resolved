@@ -1,0 +1,15 @@
+{
+  "originHash" : "7155f328c3ab51ca8fba20bbcdd39e19f879ad2503243d58a282f4fed5ac26e0",
+  "pins" : [
+    {
+      "identity" : "swiftuipresentationview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/IbrahimMoGedami/SwiftUIPresentationView.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "120e496ca471e5bd9fb8369e4f6a1312a0c9c95d"
+      }
+    }
+  ],
+  "version" : 3
+}
